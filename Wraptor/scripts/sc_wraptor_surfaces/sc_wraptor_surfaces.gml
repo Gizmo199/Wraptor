@@ -1,26 +1,24 @@
 function Surface(_width, _height) constructor
 {
-	__surf = -1;	
-	width	= _width;
-	height	= _height;
+	id						= surface_create(_width, _height);
 	static create			= function(_width, _height)
 	{
 		if ( !exists() )
 		{
-			__surf  = surface_create(_width, _height);
-			width	= _width;
-			height	= _height;
+			id  = surface_create(_width, _height);
+			__size.x = _width;
+			__size.y = _height;
 		}
 	}
 	static exists			= function()
 	{
-		return surface_exists(__surf);	
+		return surface_exists(id);	
 	}
 	static free				= function()
 	{
 		if ( exists() )
 		{
-			surface_free(__surf);
+			surface_free(id);
 		}
 	}	
 	static replace			= function(_width, _height)
@@ -30,7 +28,7 @@ function Surface(_width, _height) constructor
 	}
 	static set				= function()
 	{
-		surface_set_target(__surf);	
+		surface_set_target(id);	
 	}
 	static reset			= function()
 	{	
@@ -39,19 +37,22 @@ function Surface(_width, _height) constructor
 	static draw				= function(_x, _y, _xscale=1, _yscale=1, _angle=0, _blend=c_white, _alpha=1)
 	{	
 		///@func draw(x, y, *xscale, *yscale, *angle, *blend, *alpha)
-		if ( !exists() ) create(width, height);	
-		draw_surface_ext(__surf, _x, _y, _xscale, _yscale, _angle, _blend, _alpha);
+		if ( !exists() ) create(__size.x, __size.y);	
+		draw_surface_ext(id, _x, _y, _xscale, _yscale, _angle, _blend, _alpha);
 	}
 	static draw_stretched	= function(_x, _y, _w, _h, _blend=c_white, _alpha=1)
 	{
 		///@func draw_stretched(x, y, width, height, *blend, *alpha);
 		if ( !exists() ) create(width, height);	
-		draw_surface_stretched_ext(__surf, _x, _y, _w, _h, _blend, _alpha);
+		draw_surface_stretched_ext(id, _x, _y, _w, _h, _blend, _alpha);
 	}
 	static draw_part		= function(_x, _y, _left, _top, _width, _height, _xscale = 1, _yscale = 1, _blend = c_white, _alpha = 1)
 	{
 		///@func draw_part(x, y, left, top, width, height, *xscale, *yscale, *blend, *alpha)
 		if ( !exists() ) create(width, height);	
-		draw_surface_part(__surf, _left, _top, _width, _height, _x, _y);
+		draw_surface_part(id, _left, _top, _width, _height, _x, _y);
 	}	
+	
+	// For re-creation purposes
+	__size = { x : _width, y : _height }
 }
