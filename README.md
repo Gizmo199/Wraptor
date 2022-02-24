@@ -108,3 +108,13 @@ buff = buffer_create(1, buffer_grow, 1);
 
 buffer_set_surface(buff, surf.id, 1);
 ```
+
+# Display
+I have also included a bunch of easy to use `display` macros. You can call any of these to resize them, get their widths, and even get specific function calls from them:
+```
+Gui
+Window
+Display
+AppSurf
+```
+Each contain a `width()` and `height()` function call. 
