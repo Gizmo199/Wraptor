@@ -14,6 +14,7 @@ Gui = {
 }
 Window = {
 	fullscreen		: function(_enable){ window_set_fullscreen(_enable); },
+	is_fullscreen	: function(){ return window_get_fullscreen(); },
 	width			: function() { return window_get_width() },
 	height			: function() { return window_get_height()},
 	set_size		: function(_w, _h)

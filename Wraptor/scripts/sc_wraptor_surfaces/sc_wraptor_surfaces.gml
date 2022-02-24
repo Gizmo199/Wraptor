@@ -64,3 +64,5 @@ function Surface(_width, _height) constructor
 	// For re-creation purposes
 	__size = { x : _width, y : _height }
 }
+
+//buffer_set_surface(buff, surf, off);

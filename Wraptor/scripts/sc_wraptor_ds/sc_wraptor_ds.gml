@@ -24,7 +24,7 @@ function Array() constructor
 	}
 	static push			= function()
 	{
-		var _i = 0;
+		var _i = -1;
 		repeat(argument_count)
 		{
 			array_push(id, argument[++_i]);
@@ -41,12 +41,12 @@ function Array() constructor
 		array_sort(id, _ascend);
 		return self;
 	}
-	static insert		= function()
+	static insert		= function(_pos)
 	{
-		var _i = 0;
-		repeat(argument_count)
+		var _i = 1;
+		repeat(argument_count-1)
 		{
-			array_insert(id, _i, argument[_i]);
+			array_insert(id, _pos + (_i-1), argument[_i]);
 			_i++;
 		}
 		return self;
@@ -217,11 +217,10 @@ function DsQueue() constructor
 	}
 	static enqueue		= function(_val)
 	{
-		var _i = 0;
+		var _i=-1;
 		repeat(argument_count)
 		{
-			ds_queue_enqueue(id, argument[_i]);	
-			_i++;
+			ds_queue_enqueue(id, argument[++_i]);	
 		}
 		return self;
 	}
@@ -375,11 +374,10 @@ function DsStack() constructor
 	}
 	static push			= function(_val)
 	{
-		var _i = 0;
+		var _i = -1;
 		repeat(argument_count)
 		{
-			ds_stack_push(id, argument[_i]);
-			_i++;
+			ds_stack_push(id, argument[++_i]);
 		}
 	}
 }
@@ -521,7 +519,8 @@ function DsMap() constructor
 }	
 function DsGrid() constructor
 {
-	id					= ds_grid_create(0, 0);	
+	///@func DsGrid(*width, *height)
+	id					= ds_grid_create(argument_count>0?argument[0]:0, argument_count>1?argument[1]:0);	
 	static set_size		= function(_width, _height)
 	{
 		resize(	_width, _height );
