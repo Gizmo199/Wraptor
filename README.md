@@ -99,3 +99,12 @@ surf.reset();
 surf.draw(0, 0);                        // Regular surface drawing
 surf.draw(0, 0, 1, 1, 0, c_blue, 0.5);  // Draw a semi-translucent surface on top of our regularly drawn surface
 ```
+
+You can also reference the surface using the `id` tag and use it with standard surface functions like so
+```
+var surf, buff;
+surf = new Surface(64, 64);
+buff = buffer_create(1, buffer_grow, 1);
+
+buffer_set_surface(buff, surf.id, 1);
+```
