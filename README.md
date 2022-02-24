@@ -50,8 +50,6 @@ data = new Array(2, 15);
 data.insert(0, new Array(4,1).id);
 ```
 The above would return `[[1,1,1,1],15,15]`
-
-##### DataCreate
 You can also use the `DataCreate()` function to create any data structure you like using the `ds_type_*` command like so:
 ```
 var data;
