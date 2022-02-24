@@ -32,7 +32,7 @@ Array.equals(array_to_compare)
 ```
 **NOTE:** Any function call that ask for you to provide a data type will work with either the data type OR these custom structs like so:
 
-###### Sub-nesting and referencing
+##### Sub-nesting and referencing
 ```
 var data, compare;
 data = new Array(4, -1);
@@ -51,7 +51,7 @@ data.insert(0, new Array(4,1).id);
 ```
 The above would return `[[1,1,1,1],15,15]`
 
-###### DataCreate()
+##### DataCreate
 You can also use the `DataCreate()` function to create any data structure you like using the `ds_type_*` command like so:
 ```
 var data;
