@@ -17,14 +17,16 @@ for ( var i=0; i<data.size(); i++ )
   show_debug_message(data.id[i]);
 }
 ```
-Function list includes:
-> size	
-> push	
-> pop	
-> sort	
-> insert
-> erase
-> clear
-> get	
-> set	
-> equals
+### Functions
+```
+size	
+push	
+pop	
+sort	
+insert
+erase
+clear
+get	
+set	
+equals
+```
