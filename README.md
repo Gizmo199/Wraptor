@@ -17,16 +17,16 @@ for ( var i=0; i<data.size(); i++ )
   show_debug_message(data.id[i]);
 }
 ```
-###### Functions
+Each data type includes the list of functions commonly associated with the type, such that array contains:
 ```
-size	
-push	
-pop	
-sort	
-insert
-erase
-clear
-get	
-set	
-equals
+Array.size()
+Array.push()
+Array.pop()	
+Array.sort(ascending_order)	
+Array.insert()
+Array.erase(position, number_of_values)
+Array.clear(value)
+Array.get(position)	
+Array.set(position, value)	
+Array.equals(array_to_compare)
 ```
