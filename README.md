@@ -53,8 +53,9 @@ The above would return `[[1,1,1,1],15,15]`
 You can also use the `DataCreate()` function to create any data structure you like using the `ds_type_*` command like so:
 ```
 var data;
-data = DataCreate(ds_type_array);
-data.id[0] = "position1";
+data = DataCreate(ds_type_list);
+data.id[| 0] = "position1";
+data.set(1, "position2");
 ```
 there is also an added ds_type called `ds_type_array`. `DataCreate()` can use any of these constants as a parameter:
 ```
