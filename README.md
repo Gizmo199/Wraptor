@@ -1,3 +1,6 @@
+**NOTE** 
+I believe everything works correctly, but I haven't had the chance to go through all of the functionality with a fine toothed comb. Please report any issues you come acrossed and I will be sure to fix them ASAP! :)
+
 # Wraptor
 A library of wrapper functions for gamemaker studio 2
 
