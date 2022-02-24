@@ -67,3 +67,14 @@ ds_type_stack
 ds_type_map		
 ds_type_grid		
 ```
+
+##### Command chains
+You can chain together commands too! Any function that does not offer a return value is able to be chained like so:
+```
+var data;
+data = new DsList();
+data.add("Pos1", "Pos2", "Pos3");
+
+var data_size = data.add("Pos4").size();
+```
+In this example `data_size` will return 4 which is the size of the array after adding a 4th position!
