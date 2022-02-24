@@ -1,6 +1,8 @@
 **NOTE** 
 I believe everything works correctly, but I haven't had the chance to go through all of the functionality with a fine toothed comb. Please report any issues you come acrossed and I will be sure to fix them ASAP! :)
 
+Also note that any function calls that normally contain the word `delete` are replaced in the structs with the word `erase`
+
 # Wraptor
 A library of wrapper functions for gamemaker studio 2
 
