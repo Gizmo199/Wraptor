@@ -79,7 +79,23 @@ var data_size = data.add("Pos4").size();
 ```
 In this example `data_size` will return 4 which is the size of the array after adding a 4th position!
 
-# Vectors
+## Vectors
 I have also included my [Vector library](https://github.com/Gizmo199/vector-library) in this project as well with the slight difference that `vec2` and `vec3` are now capitolized as `Vec2()` `Vec3()`. It contains all of the standard functionality that my original vector library contains. To read more about the vector library and how to use it follow the link above or go to: https://github.com/Gizmo199/vector-library
 
+## Surfaces
+Surfaces follow in a similar fasion with some added functionality to make things easier! It has automatic 'surface_exists()' checks in the draw codes. You can set up a surface with ease like so:
 
+**Create Event**
+```
+var surf;
+surf = new Surface(room_width, room_height);
+surf.set();
+draw_sprite(sprite_index, image_index, x, y);
+surf.reset();
+```
+
+**Draw event**
+```
+surf.draw(0, 0);                        // Regular surface drawing
+surf.draw(0, 0, 1, 1, 0, c_blue, 0.5);  // Draw a semi-translucent surface on top of our regularly drawn surface
+```
