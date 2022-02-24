@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"sc_wraptor_display","path":"scripts/sc_wraptor_display/sc_wraptor_display.yy",},"order":3,},
     {"id":{"name":"sc_wraptor_vectors","path":"scripts/sc_wraptor_vectors/sc_wraptor_vectors.yy",},"order":4,},
+    {"id":{"name":"About","path":"notes/About/About.yy",},"order":5,},
     {"id":{"name":"sc_wraptor_surfaces","path":"scripts/sc_wraptor_surfaces/sc_wraptor_surfaces.yy",},"order":2,},
     {"id":{"name":"sc_wraptor_ds","path":"scripts/sc_wraptor_ds/sc_wraptor_ds.yy",},"order":0,},
   ],
