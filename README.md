@@ -8,7 +8,7 @@ A library of wrapper functions for gamemaker studio 2
 
 Wraptor is an ongoing wrapper library for GM. This library lets you condense your code into a much more readable 
 format that follows a more modern coding approach to getters and setters. This library even includes the ability to 'chain'
-sub-function calls together! All data types are referenced within the structs as `id`
+sub-function calls together! All data pointers are referenced within the structs as `id`
 
 ## Data Structures
 Setting up an array and getting the size of the array is so easy!
