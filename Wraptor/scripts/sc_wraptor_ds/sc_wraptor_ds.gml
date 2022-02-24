@@ -1,22 +1,15 @@
-enum __eDATA_TYPE { ARRAY, LIST, QUEUE, PRIORITY, STACK, MAP, GRID }
-#macro data_type_array		__eDATA_TYPE.ARRAY
-#macro data_type_list		__eDATA_TYPE.LIST
-#macro data_type_queue		__eDATA_TYPE.QUEUE
-#macro data_type_priority	__eDATA_TYPE.PRIORITY
-#macro data_type_stack		__eDATA_TYPE.STACK
-#macro data_type_map		__eDATA_TYPE.MAP
-#macro data_type_grid		__eDATA_TYPE.GRID
-function DataStructure(data_type)
+#macro ds_type_array		0
+function DataCreate(data_type)
 {
 	switch(data_type)
 	{
-		case data_type_array	: return new Array();		break;
-		case data_type_list		: return new DsList();		break;
-		case data_type_queue	: return new DsQueue();		break;
-		case data_type_priority	: return new DsPriority();	break;
-		case data_type_stack	: return new DsStack();		break;
-		case data_type_map		: return new DsMap();		break;
-		case data_type_grid		: return new DsGrid();		break;
+		case ds_type_array		: return new Array();		break;
+		case ds_type_list		: return new DsList();		break;
+		case ds_type_queue		: return new DsQueue();		break;
+		case ds_type_priority	: return new DsPriority();	break;
+		case ds_type_stack		: return new DsStack();		break;
+		case ds_type_map		: return new DsMap();		break;
+		case ds_type_grid		: return new DsGrid();		break;
 	}
 	return -1;
 }

@@ -1,9 +1,7 @@
 {
   "resources": [
     {"id":{"name":"sc_wraptor_display","path":"scripts/sc_wraptor_display/sc_wraptor_display.yy",},"order":3,},
-    {"id":{"name":"sc_wraptor_sprites","path":"scripts/sc_wraptor_sprites/sc_wraptor_sprites.yy",},"order":1,},
     {"id":{"name":"sc_wraptor_vectors","path":"scripts/sc_wraptor_vectors/sc_wraptor_vectors.yy",},"order":4,},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":2,},
     {"id":{"name":"sc_wraptor_surfaces","path":"scripts/sc_wraptor_surfaces/sc_wraptor_surfaces.yy",},"order":2,},
     {"id":{"name":"sc_wraptor_ds","path":"scripts/sc_wraptor_ds/sc_wraptor_ds.yy",},"order":0,},
   ],
@@ -21,9 +19,7 @@
     "name": "Default",
     "children": [],
   },
-  "RoomOrderNodes": [
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
-  ],
+  "RoomOrderNodes": [],
   "Folders": [
     {"folderPath":"folders/Wraptor.yy","order":1,"resourceVersion":"1.0","name":"Wraptor","tags":[],"resourceType":"GMFolder",},
   ],

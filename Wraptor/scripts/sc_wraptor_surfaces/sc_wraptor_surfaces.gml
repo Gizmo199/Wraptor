@@ -10,6 +10,14 @@ function Surface(_width, _height) constructor
 			__size.y = _height;
 		}
 	}
+	static width			= function()
+	{
+		return surface_get_width(id);
+	}
+	static height			= function()
+	{
+		return surface_get_height(id);	
+	}
 	static exists			= function()
 	{
 		return surface_exists(id);	
