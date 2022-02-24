@@ -30,9 +30,9 @@ Array.get(position)
 Array.set(position, value)	
 Array.equals(array_to_compare)
 ```
-**NOTE:** Any function call that ask for you to provide a data type will work with either the data type OR these custom structs like so:
 
 ##### Sub-nesting and referencing
+Any function call that ask for you to provide a data type will work with either the data type OR these custom structs like so
 ```
 var data, compare;
 data = new Array(4, -1);
