@@ -3,7 +3,7 @@ I believe everything works correctly, but I haven't had the chance to go through
 
 Also note that any function calls that normally contain the word `delete` are replaced in the structs with the word `erase`
 
-# Wraptor
+# Wraptor (v1.0.0)
 A library of wrapper functions for gamemaker studio 2
 
 Wraptor is an ongoing wrapper library for GM. This library lets you condense your code into a much more readable 
