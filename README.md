@@ -117,4 +117,12 @@ Window
 Display
 AppSurf
 ```
-Each contain a `width()` and `height()` function call. 
+Each contain a `width()` and `height()` function call and can be used like so:
+```
+// Set fullscreen
+if ( keyboard_check_pressed(ord("F")) )
+{
+  Window.fullscreen(!Window.is_fullscreen());
+}
+```
+the above code, for example, will toggle the window between fullscreen and small screen.
